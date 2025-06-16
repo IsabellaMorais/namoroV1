@@ -1,0 +1,147 @@
+/* style.css */
+
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #ffe6f0;
+  color: #a84464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container, .content {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Botões da página inicial */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #fbb1bd;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f9899f;
+}
+
+/* Listas */
+.love-list, .music-list {
+  list-style: none;
+  padding: 0;
+}
+
+.love-list li, .music-list li {
+  background: #ffd6e0;
+  margin: 10px auto;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  border: 2px dotted #f9899f;
+  padding: 1rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 200px;
+  background: #ffe6f0;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.card:hover ~ .card {
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+/* Cartas */
+.letters button {
+  background: #fbb1bd;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.letter {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff0f5;
+  border-radius: 10px;
+  border: 1px solid #f9899f;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.letter p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+  color: #a84464;
+  line-height: 1.8;
+}
+
+
+/* Botão fixo no canto inferior direito */
+.btn-back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fbb1bd;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #f9899f;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #c94f7c;
+}

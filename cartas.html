@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartas</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts para estilo romântico moderno -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main class="content">
+    <h2>Cartas</h2>
+    <div class="letters">
+      <button onclick="showLetter('carta1')">16/06/2025</button>
+      <button onclick="showLetter('carta2')">14/02/2024</button>
+    </div>
+    <div id="carta1" class="letter" style="display:none;">
+      <p>
+eu nem sei direito por onde começar, porque parece que meu coração quer falar mil coisas ao mesmo tempo. Mas vou tentar colocar em palavras um pouquinho do que eu senti e ainda tô sentindo. Aquele momento no lago, de mãos dadas, seu olhar sincero, suas palavras me tocaram de um jeito que eu nunca vou esquecer. Foi como se o mundo tivesse parado por alguns minutos só pra gente existir ali, juntos, do nosso jeitinho. Eu sempre imaginei como seria gostar de alguém de verdade e agora eu sei. É ter o coração disparando quando te vejo chegar, é sorrir com qualquer mensagem sua, é ficar lembrando do seu jeito, da sua voz, dos nossos momentos e querer que eles se repitam mil vezes. Obrigada por ser tão verdadeiro comigo, por não ter medo de sentir, por fazer aquele dia tão simples se tornar um dos mais bonitos da minha vida. Eu gosto de você, Jean. Muito. E tô aqui, feliz e com o coração aberto, pra viver o que for com você, devagar, do nosso jeito, com carinho, risadas e tudo o que vier. Com carinho (e um coração bobinho e bobo por você), 
+</p>
+    </div>
+    <div id="carta2" class="letter" style="display:none;">
+      <p>Hoje é um dia especial porque lembro de tudo que já vivemos juntos...</p>
+    </div>
+    <a href="index.html" class="btn-back">Voltar</a>
+
+  </main>
+  <script>
+    function showLetter(id) {
+      document.querySelectorAll('.letter').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
