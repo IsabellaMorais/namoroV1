@@ -146,3 +146,70 @@ h1, h2 {
   color: #c94f7c;
 }
 
+/*cmc aq*/
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .letters button {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .letter p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+  .container, .content {
+    padding: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .letter {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .btn-back {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .letters button {
+    font-size: 1rem;
+  }
+}
+
