@@ -146,23 +146,3 @@ h1, h2 {
   color: #c94f7c;
 }
 
- /* Posicionamento individual dos corações */
-    .decoracao-coracoes .coracao:nth-child(1) { top: 10%; left: 20%; }
-    .decoracao-coracoes .coracao:nth-child(2) { top: 30%; left: 70%; }
-    .decoracao-coracoes .coracao:nth-child(3) { top: 50%; left: 40%; }
-    .decoracao-coracoes .coracao:nth-child(4) { top: 80%; left: 10%; }
-    .decoracao-coracoes .coracao:nth-child(5) { top: 60%; left: 80%; }
-    .decoracao-coracoes .coracao:nth-child(6) { top: 20%; left: 50%; }
-    .decoracao-coracoes .coracao:nth-child(7) { top: 75%; left: 60%; }
-    .decoracao-coracoes .coracao:nth-child(8) { top: 35%; left: 15%; }
-    .decoracao-coracoes .coracao:nth-child(9) { top: 5%; left: 90%; }
-    .decoracao-coracoes .coracao:nth-child(10) { top: 85%; left: 35%; }
-
-    /* Animação de flutuação para os corações */
-    @keyframes flutuar {
-      0%, 100% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-20px) rotate(10deg);
-      }
